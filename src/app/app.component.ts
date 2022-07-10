@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'component-within-component';
+  private visiblity: boolean = false;
+
+  showHide()
+  {
+    this.visiblity = !this.visiblity;
+  }
+
+  getVisiblity(){
+    return this.visiblity;
+  }
 }
